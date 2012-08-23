@@ -37,5 +37,5 @@ DEPENDENCIES
   less
   sinatra
   sinatra-assetpack
-  therubyracer (~> 0.10.2)
+  therubyracer
   thin
