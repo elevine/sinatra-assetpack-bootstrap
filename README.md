@@ -1,4 +1,6 @@
 sinatra-assetpack-bootstrap
 ===========================
 
-Basic example of a Sinatra application using AssetPack and Twitter Bootstrap
+Basic example of a [Sinatra](http://www.sinatrarb.com/) application using [AssetPack](http://ricostacruz.com/sinatra-assetpack/) and [Twitter Bootstrap](http://twitter.github.com/bootstrap/index.html).
+
+
