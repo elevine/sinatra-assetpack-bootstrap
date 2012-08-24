@@ -5,13 +5,21 @@ class App < Sinatra::Base
   set :root, File.dirname(__FILE__)
   Less.paths <<  "#{App.root}/app/css" 
 
-  #puts "*** LESS: #{Less.paths}"
   register Sinatra::AssetPack
 
   assets do
-    css :bootstrap, [
-      '/css/bootstrap.css'
+
+    js :main, '/js/main.js', [
+      '/js/vendor/jquery*.js',
+      '/js/vendor/bootstrap*.js'
     ]
+
+    css :bootstrap, [
+      '/css/theme.css',
+      '/css/responsive.css'
+    ]
+
+    prebuild true
 
   end
 
