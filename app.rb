@@ -3,7 +3,7 @@ require 'sinatra/assetpack'
 
 class App < Sinatra::Base
   set :root, File.dirname(__FILE__)
-  #Less.paths <<  "#{App.root}/apps/css" 
+  Less.paths <<  "#{App.root}/app/css" 
 
   #puts "*** LESS: #{Less.paths}"
   register Sinatra::AssetPack
