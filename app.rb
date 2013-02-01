@@ -3,7 +3,6 @@ require 'sinatra/assetpack'
 
 class App < Sinatra::Base
   set :root, File.dirname(__FILE__)
-  Less.paths <<  "#{App.root}/app/css" 
 
   register Sinatra::AssetPack
 
@@ -11,7 +10,19 @@ class App < Sinatra::Base
 
     js :main, '/js/main.js', [
       '/js/vendor/jquery*.js',
-      '/js/vendor/bootstrap*.js'
+      '/js/vendor/bootstrap-transition.js',
+      '/js/vendor/bootstrap-alert.js',
+      '/js/vendor/bootstrap-button.js',
+      #'/js/vendor/bootstrap-carousel.js',
+      '/js/vendor/bootstrap-collapse.js',
+      '/js/vendor/bootstrap-dropdown.js',
+      #'/js/vendor/bootstrap-modal.js', 
+      #'/js/vendor/bootstrap-tooltip.js',
+      #'/js/vendor/bootstrap-popover.js', 
+      #'/js/vendor/bootstrap-scrollspy.js', 
+      #'/js/vendor/bootstrap-tab.js',
+      #'/js/vendor/bootstrap-typeahead.js', 
+      #'/js/vendor/bootstrap-affix.js',
     ]
 
     css :bootstrap, [
